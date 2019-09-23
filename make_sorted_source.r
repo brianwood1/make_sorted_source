@@ -13,7 +13,8 @@ make_sorted_source <- function(src_in="", src_out="")
   current_width= options("width")[[1]]
   options(width=10000)
   
-  #I stole these two functions from StackExchange
+  #I stole these two functions from StackExchange user Konrad Rudolph
+  
   is_assign = function (expr)
     as.character(expr) %in% c('<-', '<<-', '=', 'assign')
   
