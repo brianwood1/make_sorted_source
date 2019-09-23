@@ -10,11 +10,17 @@ Not finding such a solution anywhere, I wrote the code in this repository.
 
 # Functions
 
-## make_sorted_source(src_in="", src_out="")
-#### This code parses the source code in src_in, identifies the functions are, alphabetizes them, and then creates a new source file. In the new source file, all non-function expressions will be at the top of the file, followed by all functions. 
+```
+make_sorted_source(src_in="", src_out="")
+```
 
-## get_all_function_names(src_in="")
-#### This is a utility function that will read in the source file, and then print out of all the functions identified in that source code.
+This code parses the source code in src_in, identifies the functions, alphabetizes them, and then creates a new source file. In the new source file, all non-function expressions will be at the top of the file, followed by all functions.
 
-# Warnings
-This code has not been tested on R code that includes S3 or S4 object-oriented programming expressions. This code has also not been tested with R code that includes function calls in other programming languages. This code works well for my functional programming style and that is all I can vouch for. In the future, I'd like to test this code and make improvements suited to more general use-cases.
+```
+get_all_function_names(src_in="")
+```
+
+This is a utility function that will read in the source file, and then print out of all the functions identified in that source code.
+
+### Warnings
+This code has not yet been tested on R code that includes S3 or S4 object-oriented programming expressions. This code has also not been tested with R code that includes function calls in other programming languages. This code works well for my functional programming style and that is all I can vouch for. In the future, I'd like to test this code and make improvements suited to more general use-cases.
