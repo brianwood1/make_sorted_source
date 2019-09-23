@@ -55,6 +55,7 @@ make_sorted_source <- function(src_in="", src_out="")
   non_functions <- meta[!meta$is_function,]
   
   #add a blank row after last non-function
+  blank_row <- data.frame(id=c(""), is_function=c(""), function_name=c(""), code=c(""))
   non_functions$code[nrow(non_functions)] <- paste(non_functions$code[nrow(non_functions)], "\n")
   
   
